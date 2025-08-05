@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:staged":"jest",
     "prepare": "husky install && chmod +x .husky/* || true"
   },
   "keywords": [],
