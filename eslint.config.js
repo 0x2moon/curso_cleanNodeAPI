@@ -4,8 +4,9 @@ const config = async () => {
   return [
     {
       ...love,
-      files: ['**/*.ts'],
-      ignores: ['node_modules', 'dist'],
+      // files: ['**/*.ts','src/**/*.ts'],
+      files: ['src/**/*.ts'],
+      ignores: ['node_modules', 'dist', '.husky'],
     },
   ]
 }

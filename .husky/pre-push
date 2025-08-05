@@ -1,2 +1,0 @@
-echo "[INFO] test:staged hook running"
-npm test:staged

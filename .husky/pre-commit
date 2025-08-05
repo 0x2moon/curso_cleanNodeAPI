@@ -1,2 +1,5 @@
 echo "[INFO] lint-staged hook running"
 npx lint-staged
+
+echo "[INFO] test:staged hook running"
+npm run test:staged
