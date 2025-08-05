@@ -4,12 +4,10 @@ const path = require("path");
 
 const packageJsonPath = path.resolve("package.json");
 
-
 if (!fs.existsSync(packageJsonPath)) {
   console.error("[ERROR package.json não encontrado. Rode 'npm init -y' primeiro.");
   process.exit(1);
 }
-
 
 const packageJson = require(packageJsonPath);
 packageJson.scripts = packageJson.scripts || {};
@@ -46,7 +44,6 @@ fs.writeFileSync(".husky/pre-commit", hook);
 fs.chmodSync(".husky/pre-commit", 0o755);
 console.log("[DONE] Hook .husky/pre-commit criado e marcado como executável");
 
-// 7. Cria arquivo .lintstagedrc.json
 const lintConfig = {
   "*.ts": ["eslint --fix"]
 };
