@@ -59,4 +59,5 @@ npx git-commit-msg-linter
 fs.writeFileSync(".husky/commit-msg", commitMsgHook);
 fs.chmodSync(".husky/commit-msg", 0o755);
 console.log("[DONE] Hook .husky/commit-msg criado e marcado como executável");
+
 console.log("\n[FINAL] Configuração completa! Teste com: git add arquivo.ts && git commit -m 'test'");
