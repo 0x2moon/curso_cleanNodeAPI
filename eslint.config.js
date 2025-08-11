@@ -15,6 +15,7 @@ const config = async () => {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access' : 'off',
+        "@typescript-eslint/strict-boolean-expressions" : 'off'
       },
     },
   ]
