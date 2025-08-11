@@ -3,17 +3,17 @@ const config = async () => {
 
   return [
     {
+      ignores: ['node_modules/**', 'dist/**', '.husky/**', 'coverage/**'], // add coverage também que tinha no eslintignore
+    },
+    {
       ...love,
-      // files: ['**/*.ts','src/**/*.ts'],
       files: ['src/**/*.ts'],
-      ignores: ['node_modules', 'dist', '.husky'],
-       rules: {
-        ...love.rules, // mantém as regras existentes
+      rules: {
+        ...love.rules,
         '@typescript-eslint/class-methods-use-this': 'off',
         '@typescript-eslint/no-magic-numbers': 'off',
       },
     },
-    
   ]
 }
 
