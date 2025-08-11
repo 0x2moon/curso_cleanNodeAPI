@@ -12,6 +12,7 @@ const config = async () => {
         ...love.rules,
         '@typescript-eslint/class-methods-use-this': 'off',
         '@typescript-eslint/no-magic-numbers': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ]
